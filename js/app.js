@@ -467,6 +467,13 @@
                 state.submissions = JSON.parse(localStorage.getItem('sr_submissions') || '[]');
             } catch (e) { /* noop */ }
 
+            // GA4: record a lead only after Formspree confirms successful delivery
+            if (typeof window.gtag === 'function') {
+                window.gtag('event', 'generate_lead', {
+                    form_type: type
+                });
+            }
+
             // Show success modal on success
             showModal(type);
             // Reset form
