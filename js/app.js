@@ -175,8 +175,7 @@
                     return res.json();
                 }).catch(function (err) {
                     track('form_submit_error', { type: formType, error: String(err) });
-                    // Fallback to localStorage
-                    return saveLocal(formType, payload);
+                    throw err;
                 });
             }
 
@@ -473,10 +472,17 @@
             // Reset form
             form.reset();
         }).catch(function (err) {
-            // Still show modal for UX, but log error
             console.error('[مسار وثائق] Form submit error:', err);
-            showModal(type);
-            form.reset();
+
+            var modal = document.getElementById('successModal');
+            var title = document.getElementById('modal-title');
+            var msg = document.getElementById('modal-message');
+
+            if (modal && title && msg) {
+                title.textContent = 'تعذر إرسال الطلب';
+                msg.textContent = 'لم يتم إرسال بياناتك. يرجى المحاولة مرة أخرى بعد قليل.';
+                modal.hidden = false;
+            }
         });
     }
 
