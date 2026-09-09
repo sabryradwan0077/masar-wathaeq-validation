@@ -1,5 +1,5 @@
 /**
- * مسار وثائق — Validation Landing Page
+ * Ù…Ø³Ø§Ø± ÙˆØ«Ø§Ø¦Ù‚ â€” Validation Landing Page
  * Form handling, navigation, validation, and interaction tracking.
  * No external dependencies.
  */
@@ -166,7 +166,7 @@
             if (config.leadEndpoint) {
                 return fetch(config.leadEndpoint, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                     body: JSON.stringify(payload),
                     keepalive: true,
                 }).then(function (res) {
@@ -325,10 +325,10 @@
 
         var errors = [];
         if (rules.required && !validators.required(value)) {
-            errors.push('هذا الحقل مطلوب');
+            errors.push('Ù‡Ø°Ø§ Ø§Ù„Ø­Ù‚Ù„ Ù…Ø·Ù„ÙˆØ¨');
         }
         if (rules.email && !validators.email(value)) {
-            errors.push('أدخل بريداً إلكترونياً صحيحاً أو رقم تواصل سعودي');
+            errors.push('Ø£Ø¯Ø®Ù„ Ø¨Ø±ÙŠØ¯Ø§Ù‹ Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠØ§Ù‹ ØµØ­ÙŠØ­Ø§Ù‹ Ø£Ùˆ Ø±Ù‚Ù… ØªÙˆØ§ØµÙ„ Ø³Ø¹ÙˆØ¯ÙŠ');
         }
 
         // Show/hide error
@@ -403,20 +403,20 @@
 
         var messages = {
             early_access: {
-                title: 'تم تسجيل اهتمامك بنجاح! ✅',
-                msg: 'سنواصل التواصل معك حول الوصول المبكر لمسار وثائق. شكراً لاهتمامك!'
+                title: 'ØªÙ… ØªØ³Ø¬ÙŠÙ„ Ø§Ù‡ØªÙ…Ø§Ù…Ùƒ Ø¨Ù†Ø¬Ø§Ø­! âœ…',
+                msg: 'Ø³Ù†ÙˆØ§ØµÙ„ Ø§Ù„ØªÙˆØ§ØµÙ„ Ù…Ø¹Ùƒ Ø­ÙˆÙ„ Ø§Ù„ÙˆØµÙˆÙ„ Ø§Ù„Ù…Ø¨ÙƒØ± Ù„Ù…Ø³Ø§Ø± ÙˆØ«Ø§Ø¦Ù‚. Ø´ÙƒØ±Ø§Ù‹ Ù„Ø§Ù‡ØªÙ…Ø§Ù…Ùƒ!'
             },
             demo_request: {
-                title: 'تم استلام طلب العرض التوضيحي! 🎬',
-                msg: 'سنتواصل معك لتحديد موعد مناسب للعرض. شكراً لك!'
+                title: 'ØªÙ… Ø§Ø³ØªÙ„Ø§Ù… Ø·Ù„Ø¨ Ø§Ù„Ø¹Ø±Ø¶ Ø§Ù„ØªÙˆØ¶ÙŠØ­ÙŠ! ðŸŽ¬',
+                msg: 'Ø³Ù†ØªÙˆØ§ØµÙ„ Ù…Ø¹Ùƒ Ù„ØªØ­Ø¯ÙŠØ¯ Ù…ÙˆØ¹Ø¯ Ù…Ù†Ø§Ø³Ø¨ Ù„Ù„Ø¹Ø±Ø¶. Ø´ÙƒØ±Ø§Ù‹ Ù„Ùƒ!'
             },
             paid_pilot: {
-                title: 'تم استلام طلب المشروع التجريبي! 🚀',
-                msg: 'سنراجع طلبك ونتواصل معك لمناقشة التفاصيل. شكراً لثقتك!'
+                title: 'ØªÙ… Ø§Ø³ØªÙ„Ø§Ù… Ø·Ù„Ø¨ Ø§Ù„Ù…Ø´Ø±ÙˆØ¹ Ø§Ù„ØªØ¬Ø±ÙŠØ¨ÙŠ! ðŸš€',
+                msg: 'Ø³Ù†Ø±Ø§Ø¬Ø¹ Ø·Ù„Ø¨Ùƒ ÙˆÙ†ØªÙˆØ§ØµÙ„ Ù…Ø¹Ùƒ Ù„Ù…Ù†Ø§Ù‚Ø´Ø© Ø§Ù„ØªÙØ§ØµÙŠÙ„. Ø´ÙƒØ±Ø§Ù‹ Ù„Ø«Ù‚ØªÙƒ!'
             },
             contact: {
-                title: 'تم إرسال رسالتك! 📩',
-                msg: 'سنرد عليك في أقرب وقت ممكن. شكراً لتواصلك!'
+                title: 'ØªÙ… Ø¥Ø±Ø³Ø§Ù„ Ø±Ø³Ø§Ù„ØªÙƒ! ðŸ“©',
+                msg: 'Ø³Ù†Ø±Ø¯ Ø¹Ù„ÙŠÙƒ ÙÙŠ Ø£Ù‚Ø±Ø¨ ÙˆÙ‚Øª Ù…Ù…ÙƒÙ†. Ø´ÙƒØ±Ø§Ù‹ Ù„ØªÙˆØ§ØµÙ„Ùƒ!'
             }
         };
 
@@ -459,7 +459,7 @@
         saveCtaClicks();
 
         // Log to console for debugging in local preview
-        console.log('[مسار وثائق] Form submitted:', type, data);
+        console.log('[Ù…Ø³Ø§Ø± ÙˆØ«Ø§Ø¦Ù‚] Form submitted:', type, data);
 
         // Submit via deployment module (POST to endpoint or localStorage fallback)
         SRDeploy.submitLead(type, data, form).then(function (result) {
@@ -474,7 +474,7 @@
             form.reset();
         }).catch(function (err) {
             // Still show modal for UX, but log error
-            console.error('[مسار وثائق] Form submit error:', err);
+            console.error('[Ù…Ø³Ø§Ø± ÙˆØ«Ø§Ø¦Ù‚] Form submit error:', err);
             showModal(type);
             form.reset();
         });
@@ -563,7 +563,7 @@
             state.ctaClicks = {};
             localStorage.removeItem('sr_submissions');
             localStorage.removeItem('sr_cta_clicks');
-            console.log('[مسار وثائق] Data cleared.');
+            console.log('[Ù…Ø³Ø§Ø± ÙˆØ«Ø§Ø¦Ù‚] Data cleared.');
         }
     };
 })();
