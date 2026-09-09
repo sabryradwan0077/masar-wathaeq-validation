@@ -1,0 +1,3 @@
+# Controlled validation deployment - no indexing
+User-agent: *
+Disallow: /

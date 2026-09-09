@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار وثائق | منصة مستندات عمل مهنية للمؤسسات السعودية</title>
+    <meta name="description" content="منصة عربية لإعداد وتنظيم مستندات الموارد البشرية والأعمال للمنشآت السعودية — بطريقة أسرع وأكثر اتساقا، مع إعادة استخدام بيانات المنشأة وتصدير المستندات بصيغ جاهزة.">
+
+    <!-- Controlled validation only (no indexing) -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Deployment-readiness configuration (owner-editable) -->
+    <meta name="sr-lead-endpoint" content="">
+    <meta name="sr-consent-version" content="v1.0-2026-09-09">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ===== INLINE SVG SPRITE ===== -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="ico-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/><line x1="9" y1="9" x2="10" y2="9"/></symbol>
+        <symbol id="ico-doc-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><polyline points="9 14 11 16 15 12"/></symbol>
+        <symbol id="ico-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></symbol>
+        <symbol id="ico-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></symbol>
+        <symbol id="ico-package" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 9.4 7.55 4.24"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12.01l8.73-5.05"/><line x1="12" y1="22.08" x2="12" y2="12"/></symbol>
+        <symbol id="ico-notepad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="13" y2="16"/></symbol>
+        <symbol id="ico-envelope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+        <symbol id="ico-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+        <symbol id="ico-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+        <symbol id="ico-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="6" x2="9" y2="6.01"/><line x1="15" y1="6" x2="15" y2="6.01"/><line x1="9" y1="10" x2="9" y2="10.01"/><line x1="15" y1="10" x2="15" y2="10.01"/><line x1="9" y1="14" x2="9" y2="14.01"/><line x1="15" y1="14" x2="15" y2="14.01"/><line x1="9" y1="22" x2="9" y2="18"/><line x1="15" y1="22" x2="15" y2="18"/><path d="M9 22h6"/></symbol>
+        <symbol id="ico-books" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+        <symbol id="ico-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></symbol>
+        <symbol id="ico-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+        <symbol id="ico-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+        <symbol id="ico-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+        <symbol id="ico-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="12.01"/></symbol>
+        <symbol id="ico-scales" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"/><path d="M5 8l7-5 7 5"/><path d="M5 8v4a7 7 0 0 0 14 0V8"/><line x1="3" y1="21" x2="21" y2="21"/></symbol>
+        <symbol id="ico-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+        <symbol id="ico-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+        <symbol id="ico-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></symbol>
+        <symbol id="ico-saved" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></symbol>
+        <symbol id="ico-time" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+        <symbol id="ico-coin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M9 12h6"/><path d="M12 10v4"/></symbol>
+        <symbol id="ico-scroll" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h12a2 2 0 0 0 2-2v-2H10v2a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v3h4"/><line x1="14" y1="8" x2="20" y2="8"/><line x1="14" y1="12" x2="18" y2="12"/></symbol>
+        <symbol id="ico-gov" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/></symbol>
+    </svg>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" aria-label="مسار وثائق - الرئيسية">
+                <svg class="logo-icon" width="22" height="22" aria-hidden="true"><use href="#ico-doc-mark"/></svg>
+                <span class="logo-text">مسار وثائق</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="القائمة" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#features">المميزات</a></li>
+                <li><a href="#how-it-works">كيف يعمل</a></li>
+                <li><a href="#who-for">لمن</a></li>
+                <li><a href="#pricing">الأسعار</a></li>
+                <li><a href="#faq">الأسئلة الشائعة</a></li>
+                <li><a href="#early-access" class="nav-cta">وصول مبكر</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+    <!-- ========== HERO SECTION ========== -->
+    <header class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">قوالب ومستندات منظمة يتم تطويرها ومراجعتها للاستخدام المهني</div>
+                <h1 class="hero-title">
+                    وثائق عمل مهنية<br>
+                    <span class="hero-highlight">في دقائق، ليس ساعات</span>
+                </h1>
+                <p class="hero-subtitle">
+                    منصة عربية لإعداد وتنظيم مستندات الموارد البشرية والأعمال للمنشآت السعودية، بطريقة أسرع وأكثر اتساقا، مع إمكانية إعادة استخدام بيانات المنشأة وتصدير المستندات بصيغ جاهزة.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#early-access" class="btn btn-primary btn-lg">انضم للوصول المبكر</a>
+                    <a href="#demo-request" class="btn btn-outline btn-gold btn-lg">طلب عرض توضيحي</a>
+                </div>
+                <p class="hero-disclaimer">
+                    <svg class="disclaimer-icon" aria-hidden="true"><use href="#ico-alert"/></svg> تنبيه: مسار وثائق أداة تقنية لإعداد وتنظيم المستندات ولا تقدم استشارات قانونية. القوالب ذات الأثر القانوني تخضع للمراجعة المهنية قبل اعتمادها للإنتاج.
+                </p>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+                <div class="hero-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        <span class="mockup-title">مسار وثائق</span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="mockup-sidebar">
+                            <div class="mockup-item active"><svg class="mockup-icon" aria-hidden="true"><use href="#ico-doc"/></svg> عقد العمل</div>
+                            <div class="mockup-item"><svg class="mockup-icon" aria-hidden="true"><use href="#ico-pen"/></svg> عرض التوظيف</div>
+                            <div class="mockup-item"><svg class="mockup-icon" aria-hidden="true"><use href="#ico-bell"/></svg> طلب إجازة</div>
+                            <div class="mockup-item"><svg class="mockup-icon" aria-hidden="true"><use href="#ico-package"/></svg> تسليم عهدة</div>
+                            <div class="mockup-item"><svg class="mockup-icon" aria-hidden="true"><use href="#ico-notepad"/></svg> محضر اجتماع</div>
+                            <div class="mockup-item"><svg class="mockup-icon" aria-hidden="true"><use href="#ico-envelope"/></svg> خطاب إداري</div>
+                        </div>
+                        <div class="mockup-main">
+                            <div class="mockup-status"><svg class="mockup-icon" aria-hidden="true"><use href="#ico-saved"/></svg> تم الحفظ</div>
+                            <div class="mockup-line w80"></div>
+                            <div class="mockup-line w60"></div>
+                            <div class="mockup-line w90"></div>
+                            <div class="mockup-line w40"></div>
+                            <div class="mockup-field">
+                                <span>اسم الموظف:</span> <span class="mockup-value">أحمد محمد علي</span>
+                            </div>
+                            <div class="mockup-field">
+                                <span>المسمى الوظيفي:</span> <span class="mockup-value">محاسب</span>
+                            </div>
+                            <div class="mockup-line w70"></div>
+                            <div class="mockup-actions">
+                                <span class="mockup-btn"><svg class="mockup-icon" aria-hidden="true"><use href="#ico-download"/></svg> تصدير PDF</span>
+                                <span class="mockup-btn"><svg class="mockup-icon" aria-hidden="true"><use href="#ico-doc"/></svg> تصدير Word</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== VALUE PROPOSITION ========== -->
+    <section class="section value-prop" id="value-prop">
+        <div class="container">
+            <h2 class="section-title">لماذا مسار وثائق؟</h2>
+            <p class="section-subtitle">
+                كل مؤسسة سعودية تحتاج مستندات توظيف متوافقة — لكن إعدادها يأخذ وقتًا وجهدًا كل مرة. نحن نحل هذه المشكلة.
+            </p>
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-clock"/></svg></div>
+                    <h3>توفير الوقت</h3>
+                    <p>إعداد مستند عمل متوافق في دقائق بدل ساعات — مع إعادة استخدام بيانات الشركة المحفوظة.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-building"/></svg></div>
+                    <h3>بيانات موحدة</h3>
+                    <p>أدخل معلومات شركتك مرة واحدة واستخدمها في جميع المستندات — لا تكرار، لا أخطاء.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-books"/></svg></div>
+                    <h3>سجل منظم</h3>
+                    <p>كل مستندك محفوظ ومرتب — سهل البحث والاسترجاع في أي وقت.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-refresh"/></svg></div>
+                    <h3>تحديثات محتوى</h3>
+                    <p>قوالب يتم تطويرها ومراجعتها لمواكبة المستجدات — مع إشعارك بأي تغييرات.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PAIN POINTS ========== -->
+    <section class="section pain-points" id="pain-points">
+        <div class="container">
+            <h2 class="section-title">المشكلات التي نحلها</h2>
+            <div class="pain-grid">
+                <div class="pain-card">
+                    <div class="pain-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-time"/></svg></div>
+                    <h3>الوقت الضائع</h3>
+                    <p>ساعات كل أسبوع في إعداد عقود وعروض توظيف يدويًا — كل مرة من الصفر.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-alert"/></svg></div>
+                    <h3>خطر عدم التطابق</h3>
+                    <p>استخدام قوالب قديمة أو غير متوافقة قد يعرّض المؤسسة لمشاكل قانونية.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-search"/></svg></div>
+                    <h3>بعثرة المستندات</h3>
+                    <p>ملفات متناثرة على أجهزة مختلفة — صعب العثور على المستند القديم عند الحاجة.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-coin"/></svg></div>
+                    <h3>تكلفة الاستشارات</h3>
+                    <p>الاحتكام للمستشار أو المحامي لكل مستند جديد — تكلفة متكررة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="section how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">كيف يعمل؟</h2>
+            <p class="section-subtitle">ثلاث خطوات بسيطة للحصول على مستند جاهز</p>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">١</div>
+                    <h3>أدخل بيانات شركتك</h3>
+                    <p>اسم الشركة، النشاط التجاري، العنوان، البيانات الأساسية — مرة واحدة فقط.</p>
+                </div>
+                <div class="step-connector" aria-hidden="true">←</div>
+                <div class="step-card">
+                    <div class="step-number">٢</div>
+                    <h3>اختر نوع المستند</h3>
+                    <p>عقد عمل، عرض توظيف، إشعار فترة تجريبة — أو مستند آخر من المكتبة.</p>
+                </div>
+                <div class="step-connector" aria-hidden="true">←</div>
+                <div class="step-card">
+                    <div class="step-number">٣</div>
+                    <h3>أكمل البيانات والتصدير</h3>
+                    <p>أدخل بيانات الموظف، راجع المستند، وصدّره كـ PDF أو Word.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHO IS IT FOR ========== -->
+    <section class="section who-for" id="who-for">
+        <div class="container">
+            <h2 class="section-title">لمن هذا المنتج؟</h2>
+            <div class="who-grid">
+                <div class="who-card">
+                    <div class="who-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-building"/></svg></div>
+                    <h3>أصحاب المؤسسات الصغيرة</h3>
+                    <p>تدير مؤسسة من 5–150 موظف وتعالج مستندات التوظيف بنفسك؟ هذه المنصة لك.</p>
+                </div>
+                <div class="who-card">
+                    <div class="who-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-users"/></svg></div>
+                    <h3>مديرو الموارد البشرية</h3>
+                    <p>تبحث عن أداة تسرّع إعداد المستندات وتضمن دقة البيانات دون تكرار الإدخال.</p>
+                </div>
+                <div class="who-card">
+                    <div class="who-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-gov"/></svg></div>
+                    <h3>مكاتب الخدمات الإدارية (PRO)</h3>
+                    <p>تخدم عدة مؤسسات وتنتج عشرات المستندات شهريًا — تحتاج أداة احترافية وسريعة.</p>
+                </div>
+                <div class="who-card">
+                    <div class="who-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-briefcase"/></svg></div>
+                    <h3>مستشارو الموارد البشرية</h3>
+                    <p>تقدم خدمات استشارية للمؤسسات وتريد أداة تدعم عملك اليومي مع العملاء.</p>
+                </div>
+            </div>
+            <div class="founder-note">
+                <p class="founder-line">المؤسس والمشرف المهني: المستشار القانوني صبري رضوان</p>
+                <p class="founder-copy">مسار وثائق مشروع رقمي مستقل، يُطوَّر بمدخلات قانونية وإدارية وتقنية متكاملة، وتُخضع القوالب ذات الأثر القانوني لمراجعة مهنية قبل اعتمادها للإنتاج.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DOCUMENT CATEGORIES ========== -->
+    <section class="section categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">أنواع المستندات</h2>
+            <p class="section-subtitle">المستندات الأساسية التي يحتاجها كل صاحب عمل سعودي</p>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-doc"/></svg></div>
+                    <h3>عقود العمل</h3>
+                    <p>عقود عمل متوافقة — محددة المدة أو غير محددة — بالبيانات القانونية الأساسية.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-pen"/></svg></div>
+                    <h3>عروض التوظيف</h3>
+                    <p>عروض عمل احترافية تشمل الراتب والمسمى والشروط الأساسية.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-bell"/></svg></div>
+                    <h3>إشعارات الفترة التجريبية</h3>
+                    <p>إشعارات بداية ونهاية فترة التجريبة وفق نظام العمل.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-notepad"/></svg></div>
+                    <h3>إشعارات الإنهاء</h3>
+                    <p>إشعارات إنهاء الخدمة وفق فترات الإشعار القانونية.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-coin"/></svg></div>
+                    <h3>مستندات مكافأة نهاية الخدمة</h3>
+                    <p>حسابات ومستندات مكافأة نهاية الخدمة الأساسية.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><svg width="32" height="32" aria-hidden="true"><use href="#ico-scroll"/></svg></div>
+                    <h3>شهادات عدم الممانعة</h3>
+                    <p>شهادات عدم ممانعة للموظفين المنتهية خدمتهم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BENEFITS ========== -->
+    <section class="section benefits" id="benefits">
+        <div class="container">
+            <h2 class="section-title">مميزات المنصة</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <span class="benefit-check"><svg width="20" height="20" aria-hidden="true"><use href="#ico-check"/></svg></span>
+                    <div>
+                        <strong>عربي أولًا</strong>
+                        <p>واجهة ومستندات بالعربية — مع دعم مستقبلي للإنجليزية.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-check"><svg width="20" height="20" aria-hidden="true"><use href="#ico-check"/></svg></span>
+                    <div>
+                        <strong>بيانات شركتك محفوظة</strong>
+                        <p>أدخلها مرة واحدة، استخدمها في كل مستند — لا تكرار.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-check"><svg width="20" height="20" aria-hidden="true"><use href="#ico-check"/></svg></span>
+                    <div>
+                        <strong>تصدير PDF و Word</strong>
+                        <p>جاهز للطباعة أو التعديل — حسب حاجتك.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-check"><svg width="20" height="20" aria-hidden="true"><use href="#ico-check"/></svg></span>
+                    <div>
+                        <strong>سجل مستندات منظم</strong>
+                        <p>كل مستنداتك في مكان واحد — بحث واسترجاع سهل.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-check"><svg width="20" height="20" aria-hidden="true"><use href="#ico-check"/></svg></span>
+                    <div>
+                        <strong>تحديثات محتوى مستمرة</strong>
+                        <p>قوالب يتم مراجعتها وتطويرها مع إشعارك بالتغييرات.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-check"><svg width="20" height="20" aria-hidden="true"><use href="#ico-check"/></svg></span>
+                    <div>
+                        <strong>سعر شفاف وبسيط</strong>
+                        <p>اشتراك شهري ثابت — لا خبايا ولا رسوم إضافية مفاجئة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRICING ========== -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">خطط الأسعار</h2>
+            <p class="section-subtitle">
+                أسعار ومزايا مقترحة للوصول المبكر، يجري اختبارها قبل الإطلاق الرسمي.
+            </p>
+            <div class="pricing-grid">
+                <!-- STARTER -->
+                <div class="pricing-card">
+                    <div class="pricing-badge">للمرة الأولى</div>
+                    <h3>الأساسي</h3>
+                    <div class="pricing-amount">
+                        <span class="pricing-currency">ر.س</span>
+                        <span class="pricing-value">٩٩</span>
+                        <span class="pricing-period">/ شهريًا</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>ملف شركة واحد</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>حتى 50 مستندًا مُولَّدًا في الشهر</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>فئات المستندات الأساسية للموارد البشرية والإدارة</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>تصدير Word و PDF</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>سجل المستندات الأساسي</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>حفظ بيانات الشركة لإعادة الاستخدام</li>
+                    </ul>
+                    <a href="#early-access" class="btn btn-outline btn-block">اطلب الوصول المبكر</a>
+                </div>
+                <!-- BUSINESS -->
+                <div class="pricing-card pricing-featured">
+                    <div class="pricing-badge badge-popular">الخطة الموصى بها</div>
+                    <h3>الأعمال</h3>
+                    <div class="pricing-amount">
+                        <span class="pricing-currency">ر.س</span>
+                        <span class="pricing-value">١٩٩</span>
+                        <span class="pricing-period">/ شهريًا</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>حتى 3 ملفات منشآت أو فروع</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>حتى 200 مستند مُولَّد في الشهر</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>جميع فئات المستندات</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>إعادة استخدام بيانات الشركة</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>سجل متقدم مع بحث</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>تصدير Word و PDF</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>إشعارات تحديث المحتوى والقوالب</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>دعم فني بأولوية</li>
+                    </ul>
+                    <a href="#early-access" class="btn btn-primary btn-block">اطلب الوصول لخطة الأعمال</a>
+                </div>
+                <!-- PROFESSIONAL -->
+                <div class="pricing-card pricing-card--pro">
+                    <div class="pricing-badge">للخدمات المتعددة</div>
+                    <h3>المحترف / مكتب الخدمات</h3>
+                    <div class="pricing-amount">
+                        <span class="pricing-currency">ر.س</span>
+                        <span class="pricing-value">٤٩٩</span>
+                        <span class="pricing-period">/ شهريًا</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>حتى 15 مساحة عمل لعملاء مختلفين</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>حتى 1000 مستند مُولَّد في الشهر</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>جميع فئات المستندات</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>مستخدمون متعددون داخل الفريق</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>مساحات منفصلة للعميل/الشركة</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>سجل متقدم مع بحث واسترجاع</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>خيارات تصدير احترافية</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>إشعارات تحديث المحتوى والقوالب</li>
+                        <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>دعم فني احترافي بأولوية</li>
+                    </ul>
+                    <a href="#early-access" class="btn btn-outline btn-block">اطلب تجربة للمكتب</a>
+                </div>
+            </div>
+            <p class="pricing-note">
+                <svg class="note-icon" width="18" height="18" aria-hidden="true"><use href="#ico-info"/></svg> كل الخطط تشمل فترة تجريبية مجانية. لا حاجة لبطاقة ائتمان للبدء. الأسعار بالريال السعودي وتشمل ضريبة القيمة المضافة (إن وجدت).
+            </p>
+        </div>
+    </section>
+
+    <!-- ========== CTA: EARLY ACCESS ========== -->
+    <section class="section cta-section early-access" id="early-access">
+        <div class="container">
+            <div class="cta-content">
+                <h2>انضم للوصول المبكر</h2>
+                <p>احصل على وصول مبكر للمنصة مع خصم خاص للمستخدمين الأوائل — وأنت أول من يعرف عند الإطلاق.</p>
+                <form class="lead-form" id="earlyAccessForm" novalidate>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="ea-name">الاسم الكامل *</label>
+                            <input type="text" id="ea-name" name="name" required autocomplete="name" placeholder="الاسم كما يظهر في السجل التجاري">
+                        </div>
+                        <div class="form-group">
+                            <label for="ea-company">اسم الشركة / النشاط التجاري *</label>
+                            <input type="text" id="ea-company" name="company" required autocomplete="organization" placeholder="اسم المؤسسة أو النشاط التجاري">
+                        </div>
+                        <div class="form-group">
+                            <label for="ea-role">المنصب / الدور *</label>
+                            <select id="ea-role" name="role" required>
+                                <option value="">اختر...</option>
+                                <option value="owner">صاحب مؤسسة / مدير عام</option>
+                                <option value="hr_manager">مدير موارد بشرية</option>
+                                <option value="pro">مكتب خدمات إدارية (PRO)</option>
+                                <option value="consultant">مستشار موارد بشرية</option>
+                                <option value="admin">مدير مكتب / إداري</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ea-size">حجم الشركة (عدد الموظفين) *</label>
+                            <select id="ea-size" name="company_size" required>
+                                <option value="">اختر...</option>
+                                <option value="1-5">1–5 موظفين</option>
+                                <option value="6-20">6–20 موظف</option>
+                                <option value="21-50">21–50 موظف</option>
+                                <option value="51-100">51–100 موظف</option>
+                                <option value="101-250">101–250 موظف</option>
+                                <option value="250+">أكثر من 250 موظف</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ea-email">البريد الإلكتروني أو رقم التواصل *</label>
+                            <input type="email" id="ea-email" name="email" required autocomplete="email" placeholder="your@email.com أو +966XXXXXXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="ea-interest">الاهتمام بالمنتج</label>
+                            <select id="ea-interest" name="interest">
+                                <option value="">اختر...</option>
+                                <option value="contracts">عقود العمل</option>
+                                <option value="offers">عروض التوظيف</option>
+                                <option value="probation">إشعارات الفترة التجريبية</option>
+                                <option value="all">جميع المستندات</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ea-preferred-plan">الخطة المفضلة *</label>
+                            <select id="ea-preferred-plan" name="preferred_plan" required>
+                                <option value="">اختر...</option>
+                                <option value="starter">الأساسي — ٩٩ ر.س/شهر</option>
+                                <option value="business">الأعمال — ١٩٩ ر.س/شهر</option>
+                                <option value="professional">المحترف — ٤٩٩ ر.س/شهر</option>
+                                <option value="undecided">لم أقرر بعد</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-group-full">
+                            <label for="ea-comment">ملاحظات إضافية (اختياري)</label>
+                            <textarea id="ea-comment" name="comment" rows="3" placeholder="أخبرنا عن احتياجك..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-consent">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="ea-consent" name="consent" required>
+                            <span>أوافق على استخدام بياناتي للتواصل معي بشأن المنتج فقط — ولن تتم مشاركتها مع أطراف ثالثة. *</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">سجّل اهتمامي</button>
+                    <p class="form-note"><svg class="note-icon" width="16" height="16" aria-hidden="true"><use href="#ico-lock"/></svg> لا نجمع بيانات حساسة — لا أرقام هوية، لا رواتب، لا ملفات موظفين.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA: DEMO REQUEST ========== -->
+    <section class="section cta-section demo-request" id="demo-request">
+        <div class="container">
+            <div class="cta-content">
+                <h2>طلب عرض توضيحي</h2>
+                <p>هل تريد رؤية المنصة قبل الاشتراك؟ اطلب عرضًا توضيحيًا شخصيًا — نشرح لك كيف تعمل ونسمع احتياجاتك.</p>
+                <form class="lead-form" id="demoForm" novalidate>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="demo-name">الاسم *</label>
+                            <input type="text" id="demo-name" name="name" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-company">الشركة *</label>
+                            <input type="text" id="demo-company" name="company" required autocomplete="organization">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-email">البريد الإلكتروني أو التواصل *</label>
+                            <input type="email" id="demo-email" name="email" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-role">الدور *</label>
+                            <select id="demo-role" name="role" required>
+                                <option value="">اختر...</option>
+                                <option value="owner">صاحب مؤسسة / مدير عام</option>
+                                <option value="hr_manager">مدير موارد بشرية</option>
+                                <option value="pro">مكتب خدمات إدارية (PRO)</option>
+                                <option value="consultant">مستشار موارد بشرية</option>
+                                <option value="admin">مدير مكتب / إداري</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-group-full">
+                            <label for="demo-comment">ما الذي تبحث عنه تحديداً؟ (اختياري)</label>
+                            <textarea id="demo-comment" name="comment" rows="3" placeholder="مثال: نحتاج عقود عمل لـ 50 موظف، أو نبحث عن أداة لمكتب PRO يخدم 10 مؤسسات..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-consent">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="demo-consent" name="consent" required>
+                            <span>أوافق على التواصل معي لتحديد موعد العرض التوضيحي. *</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">طلب العرض التوضيحي</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA: PAID PILOT ========== -->
+    <section class="section cta-section paid-pilot" id="paid-pilot">
+        <div class="container">
+            <div class="cta-content">
+                <h2>طلب مشروع تجريبي مدفوع</h2>
+                <p>هل تريد تجربة المنصة فعليًا مع مستنداتك الحقيقية؟ اطلب مشروعًا تجريبيًا مدفوعًا — نعداد لك مستندات فعلية وترى النتيجة بنفسك.</p>
+                <div class="pilot-offer">
+                    <div class="pilot-card">
+                        <h3>ماذا تحصل؟</h3>
+                        <ul>
+                            <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>إعداد 5 مستندات فعلية لشركتك</li>
+                            <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>مراجعة وتصدير PDF و Word</li>
+                            <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>دعم فني شخصي أثناء التجربة</li>
+                            <li><svg class="li-check" width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg>خصم 50% على الاشتراك الأولي إذا قررت المتابعة</li>
+                        </ul>
+                        <p class="pilot-price">رسوم التجربة: <strong>تُحدَّد حسب حجم وعدد المستندات</strong></p>
+                    </div>
+                </div>
+                <form class="lead-form" id="pilotForm" novalidate>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="pilot-name">الاسم *</label>
+                            <input type="text" id="pilot-name" name="name" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="pilot-company">الشركة *</label>
+                            <input type="text" id="pilot-company" name="company" required autocomplete="organization">
+                        </div>
+                        <div class="form-group">
+                            <label for="pilot-email">البريد الإلكتروني أو التواصل *</label>
+                            <input type="email" id="pilot-email" name="email" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pilot-role">الدور *</label>
+                            <select id="pilot-role" name="role" required>
+                                <option value="">اختر...</option>
+                                <option value="owner">صاحب مؤسسة / مدير عام</option>
+                                <option value="hr_manager">مدير موارد بشرية</option>
+                                <option value="pro">مكتب خدمات إدارية (PRO)</option>
+                                <option value="consultant">مستشار موارد بشرية</option>
+                                <option value="admin">مدير مكتب / إداري</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-group-full">
+                            <label for="pilot-docs">كم مستند تحتاج إعداده خلال التجربة؟ *</label>
+                            <select id="pilot-docs" name="doc_count" required>
+                                <option value="">اختر...</option>
+                                <option value="1-5">1–5 مستندات</option>
+                                <option value="6-15">6–15 مستند</option>
+                                <option value="16-30">16–30 مستند</option>
+                                <option value="30+">أكثر من 30 مستند</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-group-full">
+                            <label for="pilot-comment">أخبرنا عن مستنداتك (اختياري)</label>
+                            <textarea id="pilot-comment" name="comment" rows="3" placeholder="مثال: نحتاج 10 عقود عمل جديدة لموظفين جدد الشهر القادم..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-consent">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="pilot-consent" name="consent" required>
+                            <span>أوافق على التواصل معي لمناقشة تفاصيل المشروع التجريبي. *</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">طلب المشروع التجريبي</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">الأسئلة الشائعة</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>هل المنتج جاهز للاستخدام؟</summary>
+                    <p>المنتج قيد التطوير حاليًا. هذه الصفحة هي اختبار لقياس الطلب والاهتمام. عند تجميع عدد كافٍ من المهتمين، سنبدأ عملية التطوير الكاملة.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>هل المستندات قانونية ومعتمدة؟</summary>
+                    <p>القوالب يتم تطويرها ومراجعتها للاستخدام المهني، وهي تستند إلى نظام العمل السعودي. لكنها <strong>لا تُغني عن المراجعة القانونية المهنية</strong>. المستندات النهائية المُصدَّرة يجب مراجعتها من مستشار قانوني قبل الاستخدام الرسمي.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>هل تتكامل مع Qiwa أو GOSI؟</summary>
+                    <p>المنتج الحالي لا يتكامل مباشرة مع أي بوابات حكومية. المستندات تُعدّ ببيانات متوافقة مع المعايير المعروفة، لكن الإرسال الإلكتروني للبوابات الحكومية ليس ضمن نطاق المنتج الحالي.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>هل تدعم اللغة الإنجليزية؟</summary>
+                    <p>المنتج حاليًا عربي أولًا. الدعم الإنجليزية مخطط له كميزة مستقبلية.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>كيف تختلف عن استخدام Word أو قوالب مجانية؟</summary>
+                    <p>الفرق أن مسار وثائق تحفظ بيانات شركتك وتُدخلها تلقائيًا — لا حاجة لإعادة الإدخال كل مرة. كما أن القوالب يتم تحديثها ومراجعتها باستمرار، وسجل المستندات منظم في مكان واحد.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>هل يمكنني تجربة المنصة قبل الدفع؟</summary>
+                    <p>نعم! كل الخطط تشمل فترة تجريبية مجانية. كما يمكنك طلب عرض توضيحي أو مشروع تجريبي مدفوع.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>هل تجمعون بيانات موظفيني؟</summary>
+                    <p>لا. المنصة تُعالج بيانات الموظفين عند إعداد المستند فقط. لا نخزّن أرقام هوية، رواتب، أو ملفات شخصية بشكل دائم. بيانات الشركة تُحفظ لتكرار الاستخدام، وبيانات الموظف تُعالج بشكل مؤقت.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>ما الذي يليق بمكاتب الخدمات الإدارية (PRO)؟</summary>
+                    <p>الخطة المحترفة مصممة لمكاتب الخدمات الإدارية التي تخدم عدة مؤسسات — توفر حتى 15 مساحة عمل منفصلة للعملاء، و حتى 1000 مستند شهريًا، ودعم فني احترافي بأولوية.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COMPLIANCE DISCLAIMER ========== -->
+    <section class="section disclaimer" id="disclaimer">
+        <div class="container">
+            <div class="disclaimer-box">
+                <h3 class="disclaimer-title"><svg class="disclaimer-title-icon" width="20" height="20" aria-hidden="true"><use href="#ico-scales"/></svg> إخلاء مسؤولية قانونية</h3>
+                <p>مسار وثائق أداة لإعداد مستندات عمل مهنية — وليست مستشارًا قانونيًا. القوالب والمستندات المتاحة على المنصة تُعدّ كمساعدات إدارية وتستند إلى معايير معروفة في نظام العمل السعودي، لكنها <strong>لا تُغني عن مراجعة مستشار قانوني متخصص</strong>.</p>
+                <p>الاستخدام النهائي لأي مستند عمل يُستخدم في التعاملات الرسمية هو مسؤولية صاحب العمل. نوصي دائمًا بمراجعة المستندات النهائية مع محامٍ أو مستشار قانوني قبل التوقيع أو التسليم.</p>
+                <p>المنتج لا يرتبط بأي جهة حكومية (وزارة الموارد البشرية، Qiwa، GOSI، وغيرها) ولا يدّعي تمثيلها بأي شكل.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRIVACY NOTICE ========== -->
+    <section class="section privacy" id="privacy">
+        <div class="container">
+            <div class="disclaimer-box">
+                <h3 class="disclaimer-title"><svg class="disclaimer-title-icon" width="20" height="20" aria-hidden="true"><use href="#ico-lock"/></svg> إشعار الخصوصية</h3>
+                <p>نحن نجمع فقط البيانات اللازمة للتواصل معك واستفساراتك. بياناتك لن تُشارك مع أطراف ثالثة.</p>
+                <p>نلتزم بمبادئ تقليل البيانات الشخصية وفقًا للنظام السعودي لحماية البيانات الشخصية (PDPL). لا نجمع أرقام هوية وطنية، ولا أرقام إقامة، ولا بيانات رواتب، ولا ملفات موظفين شخصية.</p>
+                <p>عندما يصبح المنتج جاهزًا، سيتوفر إشعار خصوصية مفصل وسياسة استخدام واضحة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT / LEAD FORM ========== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">تواصل معنا</h2>
+            <p class="section-subtitle">لديك سؤال أو اقتراح؟ أرسل لنا رسالة وسنرد عليك قريبًا.</p>
+            <form class="lead-form contact-form" id="contactForm" novalidate>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="contact-name">الاسم *</label>
+                        <input type="text" id="contact-name" name="name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-company">الشركة</label>
+                        <input type="text" id="contact-company" name="company" autocomplete="organization">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">البريد الإلكتروني أو التواصل *</label>
+                        <input type="email" id="contact-email" name="email" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">الموضوع *</label>
+                        <select id="contact-subject" name="subject" required>
+                            <option value="">اختر...</option>
+                            <option value="general">استفسار عام</option>
+                            <option value="pricing">الأسعار والخطط</option>
+                            <option value="demo">طلب عرض توضيحي</option>
+                            <option value="partnership">فرصة شراكة</option>
+                            <option value="support">دعم فني</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <label for="contact-message">الرسالة *</label>
+                        <textarea id="contact-message" name="message" rows="4" required></textarea>
+                    </div>
+                </div>
+                <div class="form-consent">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="contact-consent" name="consent" required>
+                        <span>أوافق على استخدام بياناتي للتواصل معي فقط. *</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">إرسال الرسالة</button>
+            </form>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <svg class="logo-icon" width="22" height="22" aria-hidden="true"><use href="#ico-doc-mark"/></svg>
+                    <span class="logo-text">مسار وثائق</span>
+                    <p class="footer-note">علامة عمل مؤقتة — ليست نهائية</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#features">المميزات</a>
+                    <a href="#pricing">الأسعار</a>
+                    <a href="#faq">الأسئلة الشائعة</a>
+                    <a href="#contact">تواصل معنا</a>
+                    <a href="#disclaimer">إخلاء المسؤولية</a>
+                    <a href="#privacy">الخصوصية</a>
+                </div>
+                <div class="footer-copyright">
+                    <p class="footer-founder">مسار وثائق — مشروع رقمي بتأسيس وإشراف المستشار القانوني صبري رضوان</p>
+                    <p>© 2026 مسار وثائق — جميع الحقوق محفوظة</p>
+                    <p class="footer-disclaimer">المنتج قيد التطوير. هذا ليس عرضًا تجاريًا رسميًا.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== SUCCESS MODAL ========== -->
+    <div class="modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="modal-overlay" tabindex="-1"></div>
+        <div class="modal-content">
+            <div class="modal-icon"><svg width="36" height="36" aria-hidden="true"><use href="#ico-check"/></svg></div>
+            <h3 id="modal-title">تم تسجيل اهتمامك بنجاح!</h3>
+            <p id="modal-message">سنواصل التواصل معك قريبًا. شكراً لاهتمامك بمسار وثائق.</p>
+            <button class="btn btn-primary" id="modalClose">إغلاق</button>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
